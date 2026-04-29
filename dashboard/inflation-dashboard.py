@@ -23,7 +23,7 @@ def clean_spines(ax):
 # CONFIG
 # ============================================================
 st.set_page_config(
-    page_title="Inflation Trading Desk — IOTA Monitor",
+    page_title="Inflation Trading Desk : IOTA Monitor",
     page_icon="📈",
     layout="wide"
 )
@@ -59,7 +59,7 @@ def load_data():
 # ============================================================
 # HEADER
 # ============================================================
-st.title("Inflation Trading Desk — IOTA Monitor")
+st.title("Inflation Trading Desk : IOTA Monitor")
 st.caption("Euro Area 10Y Inflation Basis | Data: ECB Statistical Data Warehouse")
 
 with st.spinner("Loading ECB data..."):
@@ -129,7 +129,7 @@ tab1, tab2, tab3 = st.tabs([
 ])
 
 # ============================================================
-# TAB 1 — LIVE MONITOR
+# TAB 1 : LIVE MONITOR
 # ============================================================
 with tab1:
 
@@ -165,7 +165,7 @@ with tab1:
     col_a, col_b = st.columns(2)
 
     with col_a:
-        st.subheader("IOTA — Inflation Basis")
+        st.subheader("IOTA : Inflation Basis")
         fig2, ax2 = plt.subplots(figsize=(7, 3.5), dpi=120)
         ax2.plot(iota_filtered.index, iota_filtered * 100,
                  color='#CC3300', linewidth=1.0)
@@ -183,7 +183,7 @@ with tab1:
         plt.close()
 
     with col_b:
-        st.subheader("Z-score — Trading Signal")
+        st.subheader("Z-score : Trading Signal")
         fig3, ax3 = plt.subplots(figsize=(7, 3.5), dpi=120)
         ax3.plot(zs_filtered.index, zs_filtered,
                  color='#003366', linewidth=1.0)
@@ -208,10 +208,10 @@ with tab1:
         plt.close()
 
 # ============================================================
-# TAB 2 — BACKTEST
+# TAB 2 : BACKTEST
 # ============================================================
 with tab2:
-    st.subheader("Strategy Backtest — IOTA Mean Reversion")
+    st.subheader("Strategy Backtest : IOTA Mean Reversion")
     st.caption(f"Parameters: window={window}d | entry=±{entry_thresh}σ | exit=±{exit_band}σ")
 
     # Run backtest
@@ -248,10 +248,10 @@ with tab2:
     plt.close()
 
 # ============================================================
-# TAB 3 — STRESS TEST
+# TAB 3 : STRESS TEST
 # ============================================================
 with tab3:
-    st.subheader("Stress Test — Breakeven Shock")
+    st.subheader("Stress Test : Breakeven Shock")
     st.write(f"Simulating a **{shock_bps:+d} bps** shock on the current breakeven rate.")
 
     shocked_be   = current_be   + shock_bps / 100
