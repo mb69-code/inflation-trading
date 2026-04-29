@@ -1,8 +1,8 @@
 
-# Inflation Trading — IOTA Monitor
+# Inflation Trading - IOTA Monitor
 
 > End-to-end inflation basis trading framework: data pipeline, signal generation,
-> backtesting, and interactive dashboard — built on live ECB data.
+> backtesting, and interactive dashboard - built on live ECB data.
 
 ## Live Dashboard
 
@@ -13,7 +13,7 @@ No installation required, it runs directly in your browser !!
 
 ## Overview
 
-This project models the **IOTA spread** — the basis between euro area ZC inflation
+This project models the **IOTA spread** : the basis between euro area ZC inflation
 swap rates and bond-implied breakeven inflation. The IOTA captures a persistent
 wedge between two instruments that theoretically price the same inflation expectations,
 but diverge due to liquidity premia, indexation lags, and technical flows.
@@ -181,7 +181,7 @@ jupyter notebook notebooks/zc-inflation-swap.ipynb
 
 - Kerkhof, J. (2005). *Inflation Derivatives Explained*. Lehman Brothers Fixed Income. (https://the.earth.li/~jon/junk/kerkhof.pdf)
 - Schulz, A. & Stapf, J. (2009). *Price discovery on traded inflation expectations*. BIS.
-- ECB Statistical Data Warehouse — data-api.ecb.europa.eu
+- ECB Statistical Data Warehouse : data-api.ecb.europa.eu
 - Barclays Paper : *Global Inflation‑Linked Products: A User’s Guide*  
 - Wanningen, C.F.A.R. (2007) : *Inflation Derivatives*, Blue Sky Group (Thesis)
   
