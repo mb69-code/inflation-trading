@@ -182,6 +182,6 @@ jupyter notebook notebooks/zc-inflation-swap.ipynb
 - Kerkhof, J. (2005). *Inflation Derivatives Explained*. Lehman Brothers Fixed Income. (https://the.earth.li/~jon/junk/kerkhof.pdf)
 - Schulz, A. & Stapf, J. (2009). *Price discovery on traded inflation expectations*. BIS.
 - ECB Statistical Data Warehouse : data-api.ecb.europa.eu
-- Barclays Paper : *Global Inflation‑Linked Products: A User’s Guide*  
-- Wanningen, C.F.A.R. (2007) : *Inflation Derivatives*, Blue Sky Group (Thesis)
+- Barclays Paper : *Global Inflation‑Linked Products: A User’s Guide* (https://www.docdroid.net/PsAYm5Z/barclays-global-inflation-linked-products-a-users-guide-pdf) 
+- Wanningen, C.F.A.R. (2007) : *Inflation Derivatives*, Blue Sky Group (Thesis : https://essay.utwente.nl/fileshare/file/58033/scriptie_C_Wanningen.pdf)
   
