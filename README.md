@@ -170,8 +170,9 @@ pip install -r requirements.txt
 # Run the dashboard locally
 streamlit run dashboard/inflation-dashboard.py
 
-# Or explore the full research notebook
-jupyter notebook notebooks/01_data_construction.ipynb
+# Or explore the full research notebooks
+jupyter notebook notebooks/iota_trading_strategy.ipynb
+jupyter notebook notebooks/zc-inflation-swap.ipynb
 ```
 
 ---
