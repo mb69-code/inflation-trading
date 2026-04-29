@@ -34,7 +34,7 @@ inflation-trading/
 │   └── iota_trading_strategy.ipynb   # Full research pipeline
 │   └── zc-inflation-swap-model.ipynb # Enhanced zcis curve model
 ├── src/
-│   ├── data_loader.py               # ECB API — nominal, real, HICP
+│   ├── data_loader.py               # ECB API : nominal, real, HICP
 │   ├── basis.py                     # Swap proxy, IOTA, z-score
 │   └── backtest.py                  # Backtest engine & metrics
 ├── dashboard/
@@ -81,7 +81,7 @@ $$z_t = \frac{IOTA_t - \mu_{252d}}{\sigma_{252d}}$$
 
 ---
 
-## Notebook vs Dashboard — Two Complementary Approaches
+## Notebook vs Dashboard : Two Complementary Approaches
 
 This project is split into two distinct layers that serve different purposes
 and use data differently.
@@ -108,24 +108,24 @@ quantitative research paper.
 
 ### Interactive Dashboard (`dashboard/inflation-dashboard.py`)
 
-The dashboard is a **live monitoring and simulation tool** — it fetches fresh
+The dashboard is a **live monitoring and simulation tool** : it fetches fresh
 data from the ECB API at each session (cached for 1 hour) and focuses on
 actionability rather than research depth.
 
 **What it covers:**
 - **Live Monitor:** current breakeven, IOTA level, z-score and active signal
   updated with latest ECB data
-- **Backtest tab:** fully interactive — the user can adjust the rolling window
+- **Backtest tab:** fully interactive : the user can adjust the rolling window
   (60–504 days), entry threshold (1–3σ) and exit band (0–1σ) and see the
   P&L and drawdown recompute in real time
-- **Stress Test tab:** scenario analysis — simulates the impact of a ±100 bps
+- **Stress Test tab:** scenario analysis : simulates the impact of a ±100 bps
   breakeven shock on the IOTA level, z-score and signal across 11 shock scenarios
 
 **Data used:** live ECB API calls, refreshed every session.
 
 **Key difference:** the notebook uses cleaned, anomaly-filtered data with
 documented methodological choices. The dashboard uses raw interpolated data
-for real-time responsiveness — a deliberate trade-off between research
+for real-time responsiveness : a deliberate trade-off between research
 rigour and operational usability.
 
 
