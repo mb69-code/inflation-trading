@@ -32,6 +32,7 @@ to the bond market → sell basis. Below -2σ → buy basis.
 inflation-trading/
 ├── notebooks/
 │   └── iota_trading_strategy.ipynb   # Full research pipeline
+│   └── zc-inflation-swap-model.ipynb # Enhanced zcis curve model
 ├── src/
 │   ├── data_loader.py               # ECB API — nominal, real, HICP
 │   ├── basis.py                     # Swap proxy, IOTA, z-score
@@ -149,6 +150,15 @@ persistently before snapping back.
 > precisely measured. This model is best interpreted as a **directional
 > framework** rather than a production trading strategy.
 
+## ZCIS Curve Notebook (`zc-inflation-swap-model.ipynb`)
+
+Focuses on a more complex **curve construction** model from CPI projections:
+- seasonal decomposition and forward CPI path
+- annualized ZCIS proxy curve
+- term‑structure diagnostics and limitations
+
+**Data used:** HICP NSA monthly series.
+
 
 ## Getting Started
 
@@ -171,4 +181,6 @@ jupyter notebook notebooks/01_data_construction.ipynb
 - Kerkhof, J. (2005). *Inflation Derivatives Explained*. Lehman Brothers Fixed Income. (https://the.earth.li/~jon/junk/kerkhof.pdf)
 - Schulz, A. & Stapf, J. (2009). *Price discovery on traded inflation expectations*. BIS.
 - ECB Statistical Data Warehouse — data-api.ecb.europa.eu
+- Barclays Paper : *Global Inflation‑Linked Products: A User’s Guide*  
+- Wanningen, C.F.A.R. (2007) : *Inflation Derivatives*, Blue Sky Group (Thesis)
   
