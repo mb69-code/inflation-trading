@@ -168,7 +168,7 @@ jupyter notebook notebooks/01_data_construction.ipynb
 
 ## References
 
-- Kerkhof, J. (2005). *Inflation Derivatives Explained*. Lehman Brothers Fixed Income.
+- Kerkhof, J. (2005). *Inflation Derivatives Explained*. Lehman Brothers Fixed Income. (https://the.earth.li/~jon/junk/kerkhof.pdf)
 - Schulz, A. & Stapf, J. (2009). *Price discovery on traded inflation expectations*. BIS.
 - ECB Statistical Data Warehouse — data-api.ecb.europa.eu
   
